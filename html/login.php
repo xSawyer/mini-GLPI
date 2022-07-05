@@ -43,7 +43,7 @@
                 </div>
              
                 <div class="u-align-left u-form-group u-form-submit">
-                  <a href="#" class="u-active-palette-2-light-2 u-border-none u-btn u-btn-submit u-button-style u-hover-palette-2-light-2 u-palette-4-base u-text-active-palette-2-base u-text-body-alt-color u-text-hover-palette-2-base u-btn-1">Login</a>
+                  <a href="#" class="u-active-palette-2-light-2 u-border-none u-btn u-btn-submit u-button-style u-hover-palette-2-light-2 u-palette-4-base u-text-active-palette-2-base u-text-body-alt-color u-text-hover-palette-2-base u-btn-1">Se connecter</a>
                   <input type="submit" id='submit' value="LOGIN" class="u-form-control-hidden">
                 </div>
                 <?php
@@ -56,8 +56,8 @@
                 <input type="hidden" value="" name="recaptchaResponse">
               </form>
             </div>
-            <a href="" class="u-border-1 u-border-active-grey-10 u-border-hover-grey-10 u-btn u-button-style u-login-control u-login-create-account u-none u-text-body-alt-color u-btn-2">Forgot password?</a>
-            <a href="" class="u-border-1 u-border-active-grey-10 u-border-hover-grey-10 u-btn u-button-style u-login-control u-login-create-account u-none u-text-body-alt-color u-btn-3">Don't have an account?</a>
+            <a href="" class="u-border-1 u-border-active-grey-10 u-border-hover-grey-10 u-btn u-button-style u-login-control u-login-create-account u-none u-text-body-alt-color u-btn-2">Mot de passe oublié ?</a>
+            <a href="" class="u-border-1 u-border-active-grey-10 u-border-hover-grey-10 u-btn u-button-style u-login-control u-login-create-account u-none u-text-body-alt-color u-btn-3">Vous n'avez pas de compte ?</a>
           </div>
         </div>
       </div>
