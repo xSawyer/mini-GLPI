@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "atwriter";
+    src: url("../fonts/atwriter.ttf") format("woff2");
+   }
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("https://cdn.pixabay.com/photo/2020/02/15/14/33/network-4851119_1280.jpg");
+}
+
+header{
+    display: grid;
+    background-color: #7DD3FC;
+    grid-template-rows: 100px;
+    opacity: 50%;
+}
+#title{
+    position: relative;
+    left: 40px;
+    top:15px;
+    font-size: 50px;
+    font-family: atwriter;   
+}
+#madeby{
+    position: absolute;
+    right: 5px;
+    top:0px;
+    font-size: 25px;
+    font-family: atwriter; 
+}

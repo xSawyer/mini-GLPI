@@ -1,21 +1,21 @@
-<html>
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="fr">
     <head>
-        <meta charset="utf-8">
-        <!-- importer le fichier de style -->
-        <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+        <link href="../styles/main.css" rel="stylesheet">
+
     </head>
-    <body style='background:#fff;'>
-        <div id="content">
-            <!-- tester si l'utilisateur est connecté -->
-            <?php
-                session_start();
-                if($_SESSION['username'] !== ""){
-                    $user = $_SESSION['username'];
-                    // afficher un message
-                    echo "Bonjour $user, vous êtes connecté";
-                }
-            ?>
-            
-        </div>
-    </body>
+   <body>   
+    <header>
+        <div id="title">MINI GLPI</div>
+        <div id="madeby">Powered by Jo</div>
+    </header>
+
+    <section class="">
+
+    </section>
+
+
+
+   </body>
+  
 </html>
