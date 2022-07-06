@@ -5,12 +5,18 @@
 
     </head>
    <body>   
-    <header>
-        <div id="title">MINI GLPI</div>
-        <div id="madeby">Powered by Jo</div>
-    </header>
+ 
 
-    
+    <div class="main">
+
+        <div class="bandeau"></div>
+        
+        <div class="left_menu"></div>
+
+        <div class="main_struc"></div>
+
+
+    </div>
 
    </body>
   
