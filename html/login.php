@@ -32,10 +32,10 @@
           <div class="u-container-layout u-valign-middle u-container-layout-1"><span class="u-file-icon u-icon u-text-white u-icon-1"><img src="../images/747376.png" alt=""></span>
             <h2 class="u-text u-text-body-alt-color u-text-default u-text-1">Mini-GLPI Login</h2>
             <div class="u-form u-login-control u-form-1">
-              <form action="main.php" method="POST" class="u-clearfix u-form-custom-backend u-form-spacing-10 u-form-vertical u-inner-form" source="custom" name="form" style="padding: 0px;">
+              <form action="auth.php" method="POST" class="u-clearfix u-form-custom-backend u-form-spacing-10 u-form-vertical u-inner-form" source="custom" name="form" style="padding: 0px;">
                 <div class="u-form-group u-form-name">
-                  <label for="username" class="u-label u-text-grey-5 u-label-1">Nom d'utilisateur :</label>
-                  <input type="text" placeholder="Entrer votre nom d'utilisateur" id="username" name="username" class="u-border-2 u-border-grey-10 u-grey-10 u-input u-input-rectangle u-input-1" required>
+                  <label for="username" class="u-label u-text-grey-5 u-label-1">Adresse mail :</label>
+                  <input type="text" placeholder="Entrer votre adresse mail" id="username" name="username" class="u-border-2 u-border-grey-10 u-grey-10 u-input u-input-rectangle u-input-1" required>
                 </div>
                 <div class="u-form-group u-form-password">
                   <label for="password" class="u-label u-text-grey-5 u-label-2">Mot de passe :</label>
@@ -47,6 +47,9 @@
                   <input type="submit" id='submit' value="LOGIN" class="u-form-control-hidden">
                 </div>
                 <?php
+
+
+
                 if(isset($_GET['erreur'])){
                     $err = $_GET['erreur'];
                     if($err==1 || $err==2)
