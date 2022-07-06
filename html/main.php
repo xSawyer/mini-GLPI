@@ -10,11 +10,7 @@
         <div id="madeby">Powered by Jo</div>
     </header>
 
-    <section class="">
-
-    </section>
-
-
+    
 
    </body>
   
