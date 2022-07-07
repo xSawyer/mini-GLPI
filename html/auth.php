@@ -13,19 +13,19 @@ session_start();
       
       // on applique les deux fonctions mysqli_real_escape_string et htmlspecialchars
       // pour éliminer toute attaque de type injection SQL et XSS
-      $username = mysqli_real_escape_string($db,htmlspecialchars($_POST['username'])); 
+      $addr_mail = mysqli_real_escape_string($db,htmlspecialchars($_POST['username'])); 
       $password = mysqli_real_escape_string($db,htmlspecialchars($_POST['password']));
       
-      if($username !== "" && $password !== "")
+      if($addr_mail !== "" && $password !== "")
       {
          $requete = "SELECT count(*) FROM utilisateurs where 
-               Adresse_mail = '".$username."' and mot_de_passe = '".$password."' ";
+               Adresse_mail = '".$addr_mail."' and mot_de_passe = '".$password."' ";
          $exec_requete = mysqli_query($db,$requete);
          $reponse      = mysqli_fetch_array($exec_requete);
          $count = $reponse['count(*)'];
          if($count!=0) // nom d'utilisateur et mot de passe correctes
          {
-            $_SESSION['username'] = $username;
+            // $_SESSION['username'] = $addr_mail;
             header('Location: main.php');
          }
          else
@@ -42,6 +42,14 @@ session_start();
    {
       header('Location: login.php');
    }
+
+   $requete = "SELECT Prenom FROM utilisateurs where Adresse_mail = '".$addr_mail."'";
+   $exec_requete = mysqli_query($db,$requete);
+   $reponse      = mysqli_fetch_array($exec_requete);
+   
+   $_SESSION['username'] = $reponse[0];
+   
+
    
    mysqli_close($db); // fermer la connexion
 

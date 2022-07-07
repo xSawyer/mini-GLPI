@@ -7,3 +7,37 @@ body{
     padding: 0;
     background-color: #aebfbe;    
 }
+
+.computer{
+  
+  background-color: #e1f5fe;
+  width: 200px;
+  text-align: center;
+  margin-top: 10px;
+  border: solid black 1px;
+}
+
+.users{
+  background-color: #b3e5fc;
+  width: 200px;
+  text-align: center;
+  margin-top: 10px;
+  border: solid black 1px;
+
+}
+
+.printer{
+  background-color: #81d4fa;
+  width: 200px;
+  text-align: center;
+  margin-top: 10px;
+  border: solid black 1px;
+}
+
+.ticket{
+  background-color: #4fc3f7;
+  width: 200px;
+  text-align: center;
+  margin-top: 10px;
+  border: solid black 1px;
+}
