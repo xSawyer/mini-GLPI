@@ -11,7 +11,7 @@
     document.getElementById("u-custom-php u-custom-php-4").innerHTML = myObj.name;
   
   }
-  xmlhttp.open("GET", "state_park.php");
+  xmlhttp.open("GET", "infra.php");
   xmlhttp.send();
 </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
